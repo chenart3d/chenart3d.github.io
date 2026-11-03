@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>二维码生成 · 陈领航作品集</title>
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="../index.html">陈领航<small>TOOLS</small></a>
+    <nav class="nav__links">
+      <a href="../index.html">作品</a>
+      <a href="../resume.html">简历</a>
+    </nav>
+  </div>
+</header>
+
+<main class="detail">
+  <div class="wrap">
+    <div class="detail__head" style="grid-template-columns:1fr">
+      <div>
+        <p class="detail__kicker">Tool / QR</p>
+        <h1 style="font-size:clamp(28px,4.4vw,48px)">作品集二维码</h1>
+        <p class="detail__sub">把网址填进去，下面会实时生成二维码。手机扫一下就能打开你的作品集，也可以直接截图放进简历或名片。</p>
+      </div>
+    </div>
+
+    <div class="section" style="padding:56px 0 0">
+      <div class="toolbox">
+        <label for="url">作品集网址</label>
+        <input id="url" data-qr-input type="text" placeholder="https://chenart3d.github.io/" value="https://chenart3d.github.io/" spellcheck="false">
+
+        <div style="margin-top:28px">
+          <div class="qr-holder">
+            <img data-qr-img alt="作品集二维码" src="">
+          </div>
+        </div>
+
+        <p class="hint" style="margin-top:26px">
+          二维码图案由网络服务实时生成，需要联网才能显示。生成后直接<strong>右键图片另存为</strong>即可。
+          如果以后改了仓库名或自定义域名，把新网址填进来重新生成一次就行，不用重做网站。
+        </p>
+
+        <p class="hint" style="margin-top:14px">
+          当前指向：<a data-qr-link href="#" style="color:var(--accent);word-break:break-all"></a>
+        </p>
+
+        <p class="hint" style="margin-top:34px;border-top:1px solid var(--line);padding-top:22px">
+          提示：这个页面本身也放在网站里，别人理论上可以访问到。如果不想公开，部署前删掉 <code>tools</code> 文件夹即可，不影响其他页面。
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__inner">
+      <span>© 2026 陈领航</span>
+      <span><a href="../index.html">返回首页</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
